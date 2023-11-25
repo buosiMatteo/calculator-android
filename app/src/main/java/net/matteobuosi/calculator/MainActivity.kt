@@ -10,27 +10,6 @@ import net.matteobuosi.calculator.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
-    val numberText = findViewById<TextView>(R.id.numberText)
-    val zeroButton = findViewById<Button>(R.id.zeroButton)
-    val oneButton = findViewById<Button>(R.id.oneButton)
-    val twoButton = findViewById<Button>(R.id.twoButton)
-    val threeButton = findViewById<Button>(R.id.threeButton)
-    val fourButton = findViewById<Button>(R.id.fourButton)
-    val fiveButton = findViewById<Button>(R.id.fiveButton)
-    val sixButton = findViewById<Button>(R.id.sixButton)
-    val sevenButton = findViewById<Button>(R.id.sevenButton)
-    val eightButton = findViewById<Button>(R.id.eightButton)
-    val nineButton = findViewById<Button>(R.id.nineButton)
-    val cancelButton = findViewById<Button>(R.id.cancelButton)
-    val percentageButton = findViewById<Button>(R.id.percentageButton)
-    val divideButton = findViewById<Button>(R.id.divideButton)
-    val multiplicationButton = findViewById<Button>(R.id.multiplicationButton)
-    val minusButton = findViewById<Button>(R.id.minusButton)
-    val addButton = findViewById<Button>(R.id.addButton)
-    val resultButton = findViewById<Button>(R.id.resultButton)
-    val pointButton = findViewById<Button>(R.id.pointButton)
-
     private var numberInString: String = ""
         get() = binding.numberText.text.toString()
         set(value) {
@@ -52,6 +31,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val numberText = findViewById<TextView>(R.id.numberText)
+        val zeroButton = findViewById<Button>(R.id.zeroButton)
+        val oneButton = findViewById<Button>(R.id.oneButton)
+        val twoButton = findViewById<Button>(R.id.twoButton)
+        val threeButton = findViewById<Button>(R.id.threeButton)
+        val fourButton = findViewById<Button>(R.id.fourButton)
+        val fiveButton = findViewById<Button>(R.id.fiveButton)
+        val sixButton = findViewById<Button>(R.id.sixButton)
+        val sevenButton = findViewById<Button>(R.id.sevenButton)
+        val eightButton = findViewById<Button>(R.id.eightButton)
+        val nineButton = findViewById<Button>(R.id.nineButton)
+        val cancelButton = findViewById<Button>(R.id.cancelButton)
+        val percentageButton = findViewById<Button>(R.id.percentageButton)
+        val divideButton = findViewById<Button>(R.id.divideButton)
+        val multiplicationButton = findViewById<Button>(R.id.multiplicationButton)
+        val minusButton = findViewById<Button>(R.id.minusButton)
+        val addButton = findViewById<Button>(R.id.addButton)
+        val resultButton = findViewById<Button>(R.id.resultButton)
+        val pointButton = findViewById<Button>(R.id.pointButton)
     }
 
     fun onItemClick(view: View) {
